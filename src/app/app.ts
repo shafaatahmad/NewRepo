@@ -15,5 +15,9 @@ chawal= 80;
 chatni = 25;
 total:any = ""
 sum(){
-this.total = this.daal+ this.chawal+ this.chatni
+  if(this.total== ""){
+    this.total = this.daal+ this.chawal+ this.chatni
+  }else{
+    this.total = ""
+  }
 }}
