@@ -1,17 +1,25 @@
-<div class="head"><app-header></app-header></div>
-<div class="nav"><app-nav></app-nav></div>
-
-<div class="cont">
-
-    <div class="one">
-        <app-main></app-main>
-    </div>
-    <div class="two">
-        <app-aside></app-aside>
-    </div>
-
-    </div>
-    <div class="footer">
-
- <app-footer></app-footer>
-</div>
+<table style="border: 2px solid red;">
+   <tr>
+    <th>S.N</th>
+    <th>Item</th>
+    <th>Rs.</th>
+   </tr>
+   <tr>
+    <td>1</td>
+    <td>daal</td>
+    <td>{{daal}}</td>
+   </tr>
+   
+   <tr>
+    <td>2</td>
+    <td>chawal</td>
+    <td>{{chawal}}</td>
+   </tr>
+      <tr>
+    <td>3</td>
+    <td>chatni</td>
+    <td>{{chatni}}</td>
+   </tr>
+</table>
+<button (click)="sum()">total</button>
+<div>{{total}}</div>
