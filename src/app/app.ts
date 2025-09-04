@@ -13,7 +13,7 @@ export class App {
 daal = 50;
 chawal= 80;
 chatni = 25;
-total:number = 0
+total:any = ""
 sum(){
 this.total = this.daal+ this.chawal+ this.chatni
 }}
