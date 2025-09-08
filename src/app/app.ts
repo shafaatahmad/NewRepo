@@ -18,8 +18,13 @@ export class App {
    this.new = (event.target as HTMLInputElement).value;
   }
 
-   add(){
-    this.heros.push(this.new)
+   add(val:string){
+    if(val == 'a'){
+      this.heros.push(this.new)
+    }else{
+      this.heros.pop()
+    }
+    
     
    }
 

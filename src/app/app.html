@@ -1,8 +1,9 @@
 
 
-@for(hero of heros; track hero ){
-    <h2>{{hero}}</h2>
+@for(hero of heros;track hero){
+    <h3>{{hero}}</h3>
 }
 
 <input type="text" (input)="getval($event)">
-<button (click)="add()">Add New</button>
+<button (click)="add('a')">Add New</button>
+<button (click)="add('d')">delete</button>
