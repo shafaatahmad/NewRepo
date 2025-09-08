@@ -1,23 +1,27 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
-@Component({
+
+
+@Component({ 
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [FormsModule],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
   protected readonly title = signal('Rangrezz');
-
-daal = 50;
-chawal= 80;
-chatni = 25;
-total:any = ""
-sum(){
-  if(this.total== ""){
-    this.total = this.daal+ this.chawal+ this.chatni
-  }else{
-    this.total = ""
+  
+  heros = ["shaktiman","ironman","hulk","superman"]
+  new =""
+  getval(event:Event){
+   this.new = (event.target as HTMLInputElement).value;
   }
-}}
+
+   add(){
+    this.heros.push(this.new)
+    
+   }
+
+  }
+

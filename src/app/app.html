@@ -1,25 +1,8 @@
-<table style="border: 2px solid red;">
-   <tr>
-    <th>S.N</th>
-    <th>Item</th>
-    <th>Rs.</th>
-   </tr>
-   <tr>
-    <td>1</td>
-    <td>daal</td>
-    <td>{{daal}}</td>
-   </tr>
-   
-   <tr>
-    <td>2</td>
-    <td>chawal</td>
-    <td>{{chawal}}</td>
-   </tr>
-      <tr>
-    <td>3</td>
-    <td>chatni</td>
-    <td>{{chatni}}</td>
-   </tr>
-</table>
-<button (click)="sum()">total</button>
-<div>{{total}}</div>
+
+
+@for(hero of heros; track hero ){
+    <h2>{{hero}}</h2>
+}
+
+<input type="text" (input)="getval($event)">
+<button (click)="add()">Add New</button>
